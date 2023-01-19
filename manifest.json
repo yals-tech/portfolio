@@ -1,0 +1,36 @@
+{
+  "short_name": "Sunil Kumar - Profile",
+  "name": "Sunil Kumar - Profile",
+  "icons": [
+    {
+      "src": "sunil.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "sunil.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/profile",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/profile",
+  "theme_color": "#3367D6",
+  "shortcuts": [
+    {
+      "name": "Sunil Kumar",
+      "short_name": "Sunil Kumar",
+      "description": "Sunil Kumar - Profile",
+      "url": "/profile",
+      "icons": [
+        {
+          "src": "sunil.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "description": "MCA, 11+ Years, React, Redux, Angular, Node, MEAN, MERN"
+}
