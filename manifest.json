@@ -13,17 +13,17 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/profile",
+  "start_url": "/portfolio",
   "background_color": "#3367D6",
   "display": "standalone",
-  "scope": "/profile",
+  "scope": "/portfolio",
   "theme_color": "#3367D6",
   "shortcuts": [
     {
       "name": "Sunil Kumar",
       "short_name": "Sunil Kumar",
       "description": "Sunil Kumar - Profile",
-      "url": "/profile",
+      "url": "/portfolio",
       "icons": [
         {
           "src": "sunil.png",
@@ -32,5 +32,5 @@
       ]
     }
   ],
-  "description": "MCA, 11+ Years, React, Redux, Angular, Node, MEAN, MERN"
+  "description": "MCA, 12+ Years, React, Redux, Angular, Node, MEAN, MERN"
 }
