@@ -1,0 +1,88 @@
+@import '../../scss/colors.scss';
+
+.profile-img {
+  width: 150px;
+  position: absolute;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-img {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+  .profile-img-container {
+    text-align: center;
+  }
+  .project-stack {
+    text-align: left;
+    margin-left: -15px;
+  }
+  .project-row {
+    margin-right: 0px;
+  }
+  .emp-hist-img {
+    margin-top: 10px;
+  }
+}
+
+.social-icon {
+  width: 25px;
+}
+
+.header-section {
+  margin-left: -15px;
+  margin-right: -12px;
+}
+
+.header-banner {
+  background-color: #084e69;
+}
+
+.theme-switch {
+  text-align: right;
+  margin-top: 5px;
+}
+
+.theme-switch .btn-clear {
+  padding: 0;
+}
+
+.theme-switch .btn-clear:focus,
+.theme-switch .btn-clear:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.theme-switch .mode-text {
+  font-size: 12px;
+  font-style: italic;
+  margin-right: 5px;
+  color: $lightGrayAlt;
+}
+
+.theme-dark {
+  background-color: $drkThemeBgColor !important;
+}
+.theme-dark .header-section .header-banner {
+  background-color: $drkThemeGray;
+}
+
+.theme-dark .mode-text {
+  color: $white;
+}
+
+.social-icon-list {
+  text-align: end;
+  .social-name {
+    &:hover {
+      svg {
+        fill: $primaryBgColor;
+      }
+    }
+  }
+}

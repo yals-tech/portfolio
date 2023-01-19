@@ -1,0 +1,72 @@
+@import '../../scss/colors.scss';
+
+.header-title {
+  font-weight: bold;
+  color: $sectionTitleColor;
+  font-size: 1em;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.heading-separator {
+  margin: auto;
+  width: 40%;
+  border-bottom: 2px solid #5ed5be;
+  margin-bottom: 20px;
+}
+
+.content-box {
+  margin: 10px 0px 20px 0px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 4px;
+  background-color: $lightGrayAlt;
+}
+
+.content-box:hover {
+  background: $hoverBgColor;
+}
+
+.emp-history {
+  margin-bottom: 20px;
+}
+
+.emp-hist-title {
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 2px;
+  color: #3c4bb7;
+}
+
+.emp-hist-sub-title {
+  color: #8e9092;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.emp-hist-img {
+  width: 55px;
+  height: 55px;
+  float: left;
+  margin-right: 30px;
+}
+
+.hist-sec {
+  display: block;
+}
+
+.hist-sec-1 {
+  width: 100px;
+}
+
+.project-link a {
+  text-decoration: none;
+}
+
+.theme-dark .content-box {
+  background-color: $drkThemeBgAlt !important;
+}
+
+.theme-dark .content-box:hover {
+  background-color: $drkThemeHover !important;
+}

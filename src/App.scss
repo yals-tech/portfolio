@@ -1,0 +1,234 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import 'scss/colors.scss';
+@import 'scss/variables.scss';
+
+.progress-bar {
+  background-color: $progressColor;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.cus-list-box {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: $colTemplate;
+  gap: 10px;
+}
+
+.cus-list-box-item {
+  display: flex;
+  align-items: center;
+  background-color: $lightGrayAlt;
+  padding: 10px;
+
+  .cus-list-box-icon {
+    img {
+      filter: grayscale(0%);
+    }
+  }
+}
+
+.cus-list-box-item:hover {
+  background-color: $hoverBgColor;
+  border-radius: 4px;
+}
+
+.cus-list-box-item:hover > .cus-list-box-icon img {
+  transform: scale(0.9);
+  transition: transform 150ms ease-in-out 0s;
+  filter: grayscale(100%);
+}
+
+.cus-list-box-sub {
+  font-weight: bold;
+  transition: filter 450ms ease;
+}
+
+.cus-list-box-icon {
+  width: 80px;
+}
+
+.skill-wrapper {
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  border-radius: 4px;
+  background: #fafafa;
+  box-shadow: 2px 2px 6px 0px #d4d1d1;
+}
+
+.skill-wrapper:hover {
+  background: #e9e6fc;
+}
+
+.custom-list-item {
+  background-color: $linkBgColor;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.custom-list-item:hover {
+  background-color: $hoverBgColor;
+}
+
+.custom-list-item-title {
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 2px;
+  color: #3c4bb7;
+}
+
+.custom-list-item-sub-title {
+  color: #6c757d !important;
+}
+
+.display-inline {
+  display: inline-block;
+}
+
+.project-stack {
+  text-align: right;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: $colTemplate;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.project-item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: $lightGrayBgColor;
+  padding: 15px;
+  box-shadow: 5px 5px 5px $boxShadow;
+  border: 1px solid $borderGray;
+}
+
+.project-item:nth-child(1) {
+  grid-column: 1 / 3;
+}
+
+.project-item:hover {
+  background-color: $hoverBgColor;
+}
+
+.project-item:hover .tech-icon {
+  filter: grayscale(0%);
+  transform: rotate(360deg);
+  transition: transform 750ms ease-in-out 0s;
+}
+
+.project-name {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.project-desc {
+  font-size: 0.8rem;
+  color: #3f4142;
+}
+
+.project-split-box {
+  margin-top: 1.5rem;
+}
+.project-split {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 2rem;
+  width: 100%;
+  margin-bottom: 2px;
+  display: inline-block;
+}
+
+.project-split-right {
+  display: inline-block;
+  font-weight: bold;
+  color: $progressColor;
+  min-width: 100%;
+}
+
+.project-link {
+  float: right;
+  font-size: 0.7rem;
+}
+
+.tech-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  filter: grayscale(90%);
+}
+
+.project-tech-row {
+  float: right;
+}
+
+.left-section {
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
+}
+
+.device-type-mobile .project-item:nth-child(1) {
+  grid-column: 1 / 1;
+}
+
+.theme-dark .cus-list-box-item {
+  background-color: $drkThemeBgAlt !important;
+}
+
+.theme-dark .project-item {
+  background-color: $drkThemeBgAlt !important;
+  box-shadow: 5px 5px 5px var(--drk-theme-bg);
+  border: 1px solid $drkThemeBgAlt;
+}
+
+.theme-dark .custom-list-item-title,
+.theme-dark .text-primary,
+.theme-dark .text-muted,
+.theme-dark .project-desc,
+.theme-dark .project-name,
+.theme-dark .project-split-right {
+  color: $drkThemeColor !important;
+}
+
+.theme-dark .header-title {
+  color: $drkThemeHeaderTitle;
+}
+
+.theme-dark .heading-separator {
+  border-color: $drkThemeSeparator;
+}
+
+.theme-dark .custom-list-item-sub-title {
+  color: $drkThemeSubTitle !important;
+}
+
+.theme-dark a {
+  color: $drkThemeSubTitle !important;
+}
+
+.theme-dark .project-item:hover,
+.theme-dark .cus-list-box-item:hover {
+  background-color: $drkThemeHover !important;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $drkThemeGray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $drkThemeGray;
+}

@@ -1,0 +1,58 @@
+@import '../../scss/variables.scss';
+@import '../../scss/colors.scss';
+
+.skill-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 7px;
+  color: #ac5656;
+}
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 30px;
+}
+
+.additional-skills-box {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  .add-skill-item {
+    display: flex;
+    align-items: center;
+    background-color: $lightGrayAlt;
+    padding: 5px 10px;
+
+    &:hover {
+      background-color: $hoverBgColor;
+      border-radius: 4px;
+    }
+
+    .item-title {
+      font-weight: bold;
+      font-size: 0.8em;
+      margin-bottom: 2px;
+      color: $textColor;
+    }
+  }
+}
+
+.#{$themeDark} {
+  .additional-skills-box {
+    .add-skill-item {
+      background-color: $drkThemeBgAlt !important;
+
+      &:hover {
+        background-color: $drkThemeHover !important;
+      }
+      .item-title {
+        color: $drkThemeColor !important;
+      }
+    }
+  }
+}

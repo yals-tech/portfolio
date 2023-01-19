@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" type="image/icon type" />
+    <title>Sunil Kumar | Profile</title>
+
+    <meta
+      name="description"
+      content="Sunil Kumar - Experience in analysis, design and development of client/server, web based and n-tier applications. Expert in developing web applications using React Js, Angular, Redux, NodeJs, ExpressJS, MongoDB, JavaScript, TypeScript, SCSS/SASS/CSS."
+    />
+    <meta property="og:title" content="Sunil Kumar | Profile" />
+    <meta
+      property="og:description"
+      content="Sunil Kumar - Experience in analysis, design and development of client/server, web based and n-tier applications. Expert in developing web applications using React Js, Angular, Redux, NodeJs, ExpressJS, MongoDB, JavaScript, TypeScript, SCSS/SASS/CSS."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://skumar-mca.github.io/profile/" />
+    <meta
+      property="og:image"
+      content="https://skumar-mca.github.io/profile/static/media/sunil.81bb3c17.png"
+    />
+    <meta property="og:image:alt" content="Sunil Kumar | Profile" />
+
+    <meta name="robots" content="index, follow" />
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Sunil Kumar | Profile" />
+    <meta name="apple-mobile-web-app-title" content="Sunil Kumar | Profile" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Sunil Kumar | Profile",
+        "name": "Sunil Kumar | Profile",
+        "author": {
+          "@type": "Person",
+          "name": "Sunil Kumar"
+        },
+        "image": "https://live.staticflickr.com/65535/52423809260_d96da7d5d9.jpg",
+        "datePublished": "2022-10-01",
+        "description": "Sunil Kumar - Experience in analysis, design and development of client/server, web based and n-tier applications. Expert in developing web applications using React Js, Angular, Redux, NodeJs, ExpressJS, MongoDB, JavaScript, TypeScript, SCSS/SASS/CSS."
+      }
+    </script>
+
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+  <body>
+    <div id="root">
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #282735;
+          color: white;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          font-size: 1.2rem;
+        "
+      >
+        <div>
+          <div>Sunil Kumar</div>
+          <div style="margin-top: 35px; width: 100%; text-align: center">
+            Loading Profile...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="dist/bundle.js"></script>
+
+    <!-- Service workeer for PWA | STARTS -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('sw.js', {
+            scope: '.'
+          })
+          .then(
+            (registration) => {
+              console.log('SW Registered', registration.scope);
+            },
+            () => {
+              console.log('SW not Registered');
+            }
+          );
+      }
+    </script>
+    <!-- Service workeer for PWA | ENDS -->
+  </body>
+</html>
