@@ -1,12 +1,15 @@
 {
-  "name": "developer-portfolio",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "Portfolio",
   "main": "src/index.ts",
   "private": true,
   "author": "Sunil Kumar",
   "license": "ISC",
-  "homepage": "https://github.com/yals-tech/portfolio.git",
+  "homepage": "https://github.com/yals-tech/portfolio",
+  "bugs": {
+    "url": "https://github.com/yals-tech/portfolio/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yals-tech/portfolio.git"
